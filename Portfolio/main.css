@@ -48,3 +48,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
 } */
+
+svg:hover {
+    fill: rgb(209 213 219);
+}
