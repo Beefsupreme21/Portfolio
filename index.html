@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Cory Sanda Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://cdn.tailwindcss.com"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
+		<script src="https://kit.fontawesome.com/19ab508515.js" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body class="block lg:flex bg-neutral-200">
+
+		<header class="block lg:hidden">
+			<div class="py-12 md:py-24 text-center">
+				<img src="images/avatar.jpg" class="w-36 rounded-full m-auto" alt="" />
+				<h1>Cory Sanda</h1>
+				<p>I'm a self taught front-end web developer</p>
+			</div>
+		</header>
+
+		<header class="hidden shrink-0 pt-16 lg:flex flex-col justify-between lg:sticky lg:top-0 lg:h-screen">
+			<div class="text-center px-12">
+				<img src="images/avatar.jpg" class="w-36 rounded-full m-auto" alt="" />
+				<div>
+					<h1>Cory Sanda</h1>
+					<p>I'm a self taught front-end web developer</p>
+				</div>
+			</div>
+
+			<div class="text-center pb-6">
+				<p>Follow Us</p>
+				<div class="flex justify-center">
+					<a href="#" class="fa-brands fa-twitter fa-2x hover:text-gray-500"></a>
+					<a href="#" class="fa-brands fa-github fa-2x hover:text-gray-500"></a>
+					<a href="#" class="fa-brands fa-facebook fa-2x hover:text-gray-500"></a>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="p-8">
+			<section class="mb-6">
+				<a href="test.html" class="text-blue-500">Test</a>
+
+				<div class="mb-6">
+					<p>I'm 32 years old and have been learning to code for about 6 months. I've been using freeCodeCamp to learn. I've been in the Customer Service industry for almost 10 years and am looking to get into the tech world.</p>
+				</div>
+				<p class="text-lg">Skills & Tools</p>
+				<div class="flex flex-wrap text-center">
+					<div class="p-2">
+						<img src="images/icons/html5.png" alt="" />
+						<h3>HTML5</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/css.png" alt="" />
+						<h3>CSS</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/javascript.png" alt="" />
+						<h3>Javascript</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/php.png" alt="" />
+						<h3>PHP</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/laravel.png" alt="" />
+						<h3>Laravel</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/github.png" alt="" />
+						<h3>Github</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/database.png" alt="" />
+						<h3>SQL</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/tailwind-css.png" alt="" />
+						<h3>Tailwind</h3>
+					</div>
+					<div class="p-2">
+						<img src="images/icons/sass.png" alt="" />
+						<h3>SASS</h3>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="text-4xl pb-6">Projects</h2>
+				<div x-data="{ project1: false, project2:false }" class="grid gap-12 md:justify-items-center grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+					<div class="h-96 w-64 rounded-2xl">
+						<div @click="project1 = ! project1" class="rounded-t-2xl h-2/5 twitter_image cursor-pointer">
+						</div>
+						<div class="flex flex-col justify-between p-2 h-3/5 bg-white rounded-b-2xl">
+							<div>
+								<p @click="project1 = ! project1" class="text-xl font-bold">Twitter Clone</p>
+							</div>
+
+							<div>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab, nobis at aliquid culpa 
+									vel cumque iure distinctio deleniti tempora illum natus labore.
+								</p>
+							</div>
+							<div class="flex justify-evenly">
+								<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Live Demo<i class="fa-solid fa-chevron-right"></i></button>
+								<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Github<i class="fa-solid fa-chevron-right"></i></button>
+							</div>
+						</div>
+						<div x-show="project1">
+							<div class="modal-wrap">
+								<div @click.away="project1 = false" class="w-3/5 rounded-t-2xl" >
+									<img src="images/thumbs/twitter.PNG" alt="" class="rounded-t-2xl" />
+									<div class="flex justify-evenly bg-white rounded-b-2xl py-4">
+										<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Live Demo<i class="fa-solid fa-chevron-right"></i></button>
+										<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Github<i class="fa-solid fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="h-96 w-64 rounded-2xl">
+						<div @click="project2 = ! project2" class="rounded-t-2xl h-2/5 monopoly_image">
+						</div>
+						<div class="flex flex-col justify-between p-2 h-3/5 bg-white rounded-b-2xl">
+							<div>
+								<p class="text-xl font-bold">Monopoly Piece Creator</p>
+							</div>
+
+							<div>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ab, nobis at aliquid culpa 
+									vel cumque iure distinctio deleniti tempora illum natus labore.
+								</p>
+							</div>
+							<div class="flex justify-evenly">
+								<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Live Demo<i class="fa-solid fa-chevron-right"></i></button>
+								<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Github<i class="fa-solid fa-chevron-right"></i></button>
+							</div>
+						</div>
+						<div x-show="project2">
+							<div class="modal-wrap">
+								<div @click.away="project2 = false" class="w-3/5 rounded-t-2xl" >
+									<img src="images/thumbs/twitter2.PNG" alt="" class="rounded-t-2xl" />
+									<div class="flex justify-evenly bg-white rounded-b-2xl py-4">
+										<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Live Demo<i class="fa-solid fa-chevron-right"></i></button>
+										<button class="bg-gray-900 text-white px-3 py-1 rounded-full">Github<i class="fa-solid fa-chevron-right"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="h-96 w-64 border border-black rounded-2xl">
+						<p>Project 1</p>
+					</div>
+					<div class="h-96 w-64 border border-black rounded-2xl">
+						<p>Project 1</p>
+					</div>
+					<div class="h-96 w-64 border border-black rounded-2xl">
+						<p>Project 1</p>
+					</div>
+					<div class="h-96 w-64 border border-black rounded-2xl">
+						<p>Project 1</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="border-t border-black mt-6">
+				<h2 class="my-6 text-2xl text-neutral-700">Contact</h2>
+				<p class="mb-6">Feel free to reach out with a message</p>
+				<div class="grid grid-cols-12">
+					<div class="col-span-12 md:col-span-8 mr-6">
+						<form method="post" action="#">
+							<div class="grid grid-cols-12  w-full">
+								<input type="text" name="name" id="name" placeholder="Name" class="col-span-12 md:col-span-6 bg-gray-100 mr-2 mb-2 p-2 rounded-lg" />
+								<input type="email" name="email" id="email" placeholder="Email" class="col-span-12 md:col-span-6 bg-gray-100 mb-2 p-2 rounded-lg" />
+							</div>
+							<textarea class="w-full bg-gray-100 mb-2 p-2 rounded-lg" name="message" id="message" placeholder="Message" rows="4"></textarea>
+						</form>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" /></li>
+						</ul>
+					</div>
+					<div class="col-span-12 md:col-span-4">
+						<ul>
+							<li>
+								<h3 class="icon solid fa fa-home"></h3>
+								Denver, CO<br />
+								United States
+							</li>
+							<li>
+								<h3 class="icon solid fa fa-mobile-alt"></h3>
+								000-000-0000
+							</li>
+							<li>
+								<h3 class="icon solid fa fa-envelope"></h3>
+								<a href="#">beefsupreme21@hotmail.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div class="text-center pb-6 lg:hidden">
+			<p>Follow Us</p>
+			<div class="flex justify-center">
+				<a href="#" class="fa-brands fa-twitter fa-2x hover:text-gray-500"></a>
+				<a href="#" class="fa-brands fa-github fa-2x hover:text-gray-500"></a>
+				<a href="#" class="fa-brands fa-facebook fa-2x hover:text-gray-500"></a>
+			</div>
+		</div>
+
+	</body>
+</html>
