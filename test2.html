@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Cory Sanda Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+        <script src="//unpkg.com/alpinejs" defer></script>
+	</head>
+	
+	<body class="bg-blue-300">
+		<div x-data="{ showOverlay: false }" @mouseover="showOverlay = true" @mouseout="showOverlay = false" class="relative w-64 cursor-pointer">
+            <img src="images/avatar.jpg" class="border border-red-500" alt="" />
+			<div class="absolute inset-0 flex items-center justify-center top-0 left-0 bg-gray-900 bg-opacity-50 text-white p-2" 
+				x-show="showOverlay">
+				<button class="border border-white text-white py-2 px-4 rounded-lg">
+					View
+				</button>
+			</div>
+		</div>
+	</body>
+</html>
+
+
